@@ -1,3 +1,9 @@
+import Header from '@/component/landing/Header';
+
 export default function Home() {
-  return <div>Hello Project Eventry.</div>;
+  return (
+    <section className='container'>
+      <Header />
+    </section>
+  );
 }

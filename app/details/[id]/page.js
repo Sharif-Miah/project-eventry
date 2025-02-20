@@ -1,8 +1,12 @@
 import EventDetails from '@/components/details/EventDetails';
 import EventVenue from '@/components/details/EventVenue';
 import Hero from '@/components/details/Hero';
+import { getEventById } from '@/db/queries';
 
-const DetailsPage = () => {
+const EventDetailsPage = async ({ params: { id } }) => {
+  const eventInfo = getEventById(id);
+  console.log(eventInfo);
+
   return (
     <>
       <Hero />
@@ -16,4 +20,4 @@ const DetailsPage = () => {
   );
 };
 
-export default DetailsPage;
+export default EventDetailsPage;

@@ -1,4 +1,4 @@
-const EventVenue = () => {
+const EventVenue = ({ location }) => {
   return (
     <div class='overflow-hidden rounded-lg col-span-2 bg-[#242526]'>
       <div class='w-full'>
@@ -12,9 +12,7 @@ const EventVenue = () => {
           referrerPolicy='no-referrer-when-downgrade'></iframe>
       </div>
       <div class='p-4'>
-        <p class='text-[#9C9C9C] text-base mt-1'>
-          Rangpur, Dhaka, Bangladesh, Rangpur, Bangladesh
-        </p>
+        <p class='text-[#9C9C9C] text-base mt-1'>{location}</p>
       </div>
     </div>
   );

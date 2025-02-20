@@ -11,7 +11,7 @@ async function getAllEvents() {
 }
 
 async function getEventById(eventId) {
-  const event = await eventModel.findById(eventId);
+  const event = await eventModel.findById(eventId).lean();
   return replaceMongoIdInObject(event);
 }
 

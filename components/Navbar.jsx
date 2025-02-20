@@ -10,6 +10,7 @@ const Navbar = () => {
             <Image
               src='/logo.svg'
               alt='Eventry'
+              className='h-[45px]'
               width={135}
               height={135}
             />

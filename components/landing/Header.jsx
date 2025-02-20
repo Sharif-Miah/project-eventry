@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Header = () => {
   return (
     <div className='flex justify-between'>
@@ -9,7 +7,7 @@ const Header = () => {
         <input
           type='text'
           placeholder='Search...'
-          className='bg-[#27292F] border border-[#CCCCCC]/20 py-2 px-4 rounded-md'
+          className='bg-[#27292F] border border-[#CCCCCC]/20 py-1 px-2 rounded-md'
         />
       </div>
     </div>

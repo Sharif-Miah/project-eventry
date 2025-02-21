@@ -1,6 +1,10 @@
+import { registerUser } from '@/app/actions';
+
 const RegisterForm = () => {
   return (
-    <form className='login-form'>
+    <form
+      className='login-form'
+      action={registerUser}>
       <div>
         <label htmlFor='name'>Full Name</label>
         <input
@@ -32,7 +36,7 @@ const RegisterForm = () => {
         <label htmlFor='phone'>Phone Number</label>
         <input
           type='tel'
-          name='pnone'
+          name='phone'
           id='phone'
         />
       </div>

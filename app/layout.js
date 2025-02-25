@@ -16,11 +16,9 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: 'Project Eventry',
-  description: 'It is a project Event Organiazation function.',
-  icons: {
-    icon: '/eventry.png', // Path to your favicon
-  },
+  title: 'Eventry - Home',
+  description:
+    'A single entry to connected to all the online events from the globe.',
 };
 
 export default async function RootLayout({ children }) {

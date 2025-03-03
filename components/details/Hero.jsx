@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import React from 'react';
 import ActionButtons from '../ActionButtons';
 import { getBlurData } from '@/utils/blur-generater';
 
@@ -26,7 +25,7 @@ const Hero = async ({ eventInfo }) => {
           <div className='text-[#737373] text-sm mt-1'>
             <span>{eventInfo.interested_ids.length} Interested</span>
             <span className='mx-1'>|</span>
-            <span>{eventInfo.going_ids.length} Going</span>
+            <span>{eventInfo.going_ids.length} Going </span>
           </div>
         </div>
 

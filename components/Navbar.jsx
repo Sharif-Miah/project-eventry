@@ -23,8 +23,12 @@ const Navbar = () => {
           <li>
             <SignInOut />
           </li>
-          <li>About</li>
-          <li>Contact Us</li>
+          <li>
+            <Link href='/about'>About</Link>
+          </li>
+          <li>
+            <Link href='/contact'>Contact Us</Link>
+          </li>
         </ul>
       </div>
     </nav>

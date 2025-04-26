@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import SignInOut from './auth/SignInOut';
+import EvetPng from '@/public/banner.png';
 
 const Navbar = () => {
   return (
@@ -9,11 +10,11 @@ const Navbar = () => {
         <div className='nav-brand'>
           <Link href='/'>
             <Image
-              src='/logo.svg'
+              src={EvetPng}
               alt='Eventry'
               className='h-[45px]'
-              width={135}
-              height={135}
+              width={60}
+              height={60}
             />
           </Link>
         </div>
